@@ -39,4 +39,4 @@ def fly_report(name='World'):
 def diary():
     return template('diary', name="adfs")
 
-run(reloader=True, host='localhost', port=8080, debug=True)
+run(reloader=True, host='localhost', port=8008, debug=True)

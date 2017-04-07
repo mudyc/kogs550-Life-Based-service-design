@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="/static/css/ksi.css" type="text/css" rel="stylesheet">
+<link href="static/css/ksi.css" type="text/css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Ξξ KSI</title>
 </head>

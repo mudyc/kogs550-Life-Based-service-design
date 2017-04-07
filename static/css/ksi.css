@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body {
+    background: #fff url("/static/img/bg.png") no-repeat;
+    padding: 0;
+    padding-left: 48px;
+    font-family: arial;
+    margin: 0;
+}
+
+.root {
+    background-color: #c0c0ff;
+    border: 1px solid black;
+}
+
+.content, .info-box {
+    border: 1px solid black;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    padding: 10px 10px;
+}
+.info-box + .info-box {
+    margin-top: 0.8em;
+}
+
+
+.name, .tabs {
+    background-color: #c0ffc0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+.name {
+    padding: 1px 10px;
+}
+
+.content {
+    margin: 10px;
+    padding: 10px 10px;
+    background-color: #fff;
+
+}
+
+.form-group label {
+    display: inline-block;
+    width: 177px;
+}
+
+
+
+
+
+nav {
+    background-color: #c0ffc0;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    background-color: #c0ffc0;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    background-color: #c0ffc0;
+    border: 1px solid blue;
+    margin: 0;
+}
+nav ul li a img {
+    height: 10px;
+}
+nav > ul > li > a {
+    color: black;
+    background-color: #c0ffc0;
+    display: block;
+    margin: 0;
+    padding: 0 0.5em;
+    text-decoration: none;
+}
+
+nav li > ul li{
+    display: none;
+}
+nav li:hover > ul li{
+    display: block;
+}
+
+nav  li > ul li a {
+    color: #111;
+    display: block;
+    line-height: 2em;
+    padding: 0.2em 1em;
+    text-decoration: none;
+}
+nav li:hover {
+    background-color: #999;
+}
+nav li:hover > ul{
+    position:absolute;
+    display : block;
+}
+nav li > ul > li ul  {
+    display: none;
+    background-color: #888;
+}
+nav li > ul > li:hover > ul  {
+    position:absolute;
+    display : block;
+    margin-left:100%;
+    margin-top:-3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* index page */
+
+h2 {
+    font-weight: bold;
+}
+
+p + p {
+    margin-top: 1em;
+}
+
+table {
+    width: 100%;
+    font-size: 15px;
+}
+tr > td, tr > th{
+    padding-bottom: 2px;
+}
+table tr th {
+    background-color: #c0c0ff;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+/* plane page  */
+.gallery {
+    width: 200px;
+}
+
+.col-md-6 {
+    float: left;
+    width: 50%;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.blink {
+    animation-duration: 0.5s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    81% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* diary */
+
+.diary select {
+    margin: 2em 0 2em 10em;
+}
+
+/* listing */
+
+img.add {
+    height: 23px;
+}
+
+h3 {
+    font-weight: bold;
+}
+.known-issues ul {
+    list-style: square outside none;
+}
+.known-issues ul il {
+    
+}
+.known-issues span {
+    background-color: rgba(256,50,59,0.2);
+}
+
+/* add report */
+
+.issues {
+    margin-top: 2em;
+}
+.issues h2 { margin-bottom: 0.5em; }
+.issues label {
+    width: auto;
+}
+
+.form-group + .form-group {
+    margin-top: 0.8em;
+}
+
+.hidden {
+    display: none;
+}
+.err-questions, .env-questions {
+    padding: 1em;
+}
+textarea {
+    width: 60em;
+    height: 5em;
+}
+

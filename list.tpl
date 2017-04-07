@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="/static/css/ksi.css" type="text/css" rel="stylesheet">
+<link href="static/css/ksi.css" type="text/css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Ξξ KSI</title>
 </head>
@@ -15,15 +15,15 @@
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="index.html">Omat</a></li>
         <li><a href="index.html">Kalenterit</a></li>
-        <li><a href="index.html">Lento <img src="/static/img/down.png"></a>
+        <li><a href="index.html">Lento <img src="static/img/down.png"></a>
             <ul>
                 <li><a href="diary.html">Matkapäiväkirja</a></li>
             </ul>
         </li>
-        <li><a href="index.html">Rekisterit <img src="/static/img/down.png"></a></li>
+        <li><a href="index.html">Rekisterit <img src="static/img/down.png"></a></li>
         <li><a href="index.html">Tietopankki</a></li>
         <li><a href="index.html">Keskustelufoorumi</a></li>
-        <li><a href="index.html">Ylläpito <img src="/static/img/down.png"></a></li>
+        <li><a href="index.html">Ylläpito <img src="static/img/down.png"></a></li>
         <li><a href="index.html">Kirjaudu Ulos</a></li>
       </ul>
     </nav>
@@ -34,7 +34,7 @@
     <div class="content info-box">
       <h2>XXXX matkapäiväkirja</h2>
       <div class="info-box">
-        <a href="add_report.html"><img class="add" src="/static/img/add_flight.png"></a>
+        <a href="add_report.html"><img class="add" src="static/img/add_flight.png"></a>
         <table>
           <tr>
             <th>Lento

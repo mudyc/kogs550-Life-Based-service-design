@@ -210,7 +210,13 @@ table tr th {
 }
 
 .known-issues td {
-    width: 50%;
+    width: 50%;  
+    border: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 4px 5px;
+}
+.known-issues tr + .known-issues tr {
+    border-top: 1px solid #ddd;
 }
 
 .blink {

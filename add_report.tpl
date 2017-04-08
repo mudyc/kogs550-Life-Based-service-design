@@ -9,26 +9,8 @@
   <div class="root">
     <h1>KSI - Jäsensivusto</h1>
     <div class="info-box name">Pekka Pilotti</div>
-    <div class="tabs">
-    <nav>
-      <ul>
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="index.html">Omat</a></li>
-        <li><a href="index.html">Kalenterit</a></li>
-        <li><a href="index.html">Lento <img src="static/img/down.png"></a>
-            <ul>
-                <li><a href="diary.html">Matkapäiväkirja</a></li>
-            </ul>
-        </li>
-        <li><a href="index.html">Rekisterit <img src="static/img/down.png"></a></li>
-        <li><a href="index.html">Tietopankki</a></li>
-        <li><a href="index.html">Keskustelufoorumi</a></li>
-        <li><a href="index.html">Ylläpito <img src="static/img/down.png"></a></li>
-        <li><a href="index.html">Kirjaudu Ulos</a></li>
-      </ul>
-    </nav>
-    
-    </div>
+
+    {{! menu}}
 
 
     <div class="content info-box">
@@ -114,12 +96,14 @@
 
 
           <div class="form-group">
-            <label> <input type="checkbox" class="form-control" value="x"> Havaitsin lentokentällä tai sen läheisyydessä poikkeaman jolla on lentoturvallisuuteen vaikutusta</label>
+            
+            <input type="hidden" name="env" value="none">
+            <label> <input type="checkbox" class="form-control" name="env" value="true"> Havaitsin lentokentällä tai sen läheisyydessä poikkeaman jolla on lentoturvallisuuteen vaikutusta</label>
             <div class="hidden env-questions">
               <div>
                 Kuvaile poikkeama niin tarkasti kuin pystyt:
               </div>
-              <textarea></textarea>
+              <textarea name="env-message"></textarea>
             </div>
           </div>
 
@@ -132,17 +116,17 @@
             </div>
             <div class="hidden err-questions">
               Vika on havaintoni mukaan:
-              <select>
-                <option>Valitse</option>
-                <option>Vakava (välitön lentoturvallisuusriski)</option>
-                <option>Merkittävä (estää normaalin lentotoiminnan)</option>
-                <option>Häiritsevä (vaikuttaa joissakin tilanteissa lennon suorittamiseen)</option>
-                <option>Vähäinen (ei vaikuta lennon suorittamiseen)</option>
+              <select name="classification">
+                <option value="none">Valitse</option>
+                <option value="B">Vakava (välitön lentoturvallisuusriski)</option>
+                <option value="C">Merkittävä (estää normaalin lentotoiminnan)</option>
+                <option value="D">Häiritsevä (vaikuttaa joissakin tilanteissa lennon suorittamiseen)</option>
+                <option value="E">Vähäinen (ei vaikuta lennon suorittamiseen)</option>
               </select>
               <div>
                 Kuvaile vika parhaan kykysi mukaan (milloin, miten ja miksi ilmenee, tai muuta korjauksessa auttavaa tietoa)
               </div>
-              <textarea></textarea>
+              <textarea name="err-message"></textarea>
             </div>
           </div>
           </div>

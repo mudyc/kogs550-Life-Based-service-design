@@ -291,3 +291,7 @@ textarea {
     height: 5em;
 }
 
+/* kalenteri */
+.calendar {
+    width: 100%;
+}

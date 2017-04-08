@@ -1,3 +1,7 @@
+$.each(PLANE_DATA, function(key, val) {
+  $('select:first').append('<option>'+key+'</option>');
+});
+
 
 $('input[type="checkbox"]').on('change', function(){
   $('.env-questions').toggleClass('hidden', $('input[type="checkbox"]').checked);
@@ -7,10 +11,11 @@ $('input[type="radio"]').on('change', function() {
   $('.err-questions').toggleClass('hidden', $('input[type="radio"]:checked').val() != 'true');
 });
 
-
-var plane = location.search.substring(1);
-
 function fill_known_issues(plane) {
+  $('.known-issues table').addClass('hidden');
+  $('table tr td').each(function(){ $(this).parent().empty(); });
+
+  if (PLANE_DATA[plane] === undefined) return;
   var i = PLANE_DATA[plane].issues, count=0;
   function fill_table(tbl) {
     tbl = $('table[data-target="'+tbl+'"]');
@@ -26,15 +31,14 @@ function fill_known_issues(plane) {
   if (count == 0) $('.known-issues .no-issues').removeClass('hidden');
 };
 
-fill_known_issues(plane);
 
-$('input[name="reg"]').val(plane);
-$.each(PLANE_DATA[plane].flydata, function(k, val){
-  $('input[name="'+k+'"]').val(val);
+$('select').on('change', function(e){
+  var plane = document.querySelector("select option:checked").text;
+  fill_known_issues(plane);
 });
 
-
 $('button').on('click', function(){
+
   $.post('report', $( "input, textarea, select" ).serialize()).always(function() {
     if (['B','C'].indexOf($('[name="classification"]').val()) >= 0)
       location.href = 'error-feedback.html';
@@ -42,3 +46,4 @@ $('button').on('click', function(){
       location.href = 'index.html';
   });
 });
+

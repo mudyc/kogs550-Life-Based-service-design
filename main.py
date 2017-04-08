@@ -1,5 +1,6 @@
-from bottle import route, run, template
+from bottle import route, run, template, request
 from bottle import get, static_file
+import datetime
 
 # Static Routes
 @get("/static/css/<filepath:re:.*\.css>")
@@ -19,24 +20,46 @@ def js(filepath):
     return static_file(filepath, root="static/js")
 
 
+def menu(): return template('menu')
+
+
 @route('/index.html')
-def index(name='World'):
-    return template('index', name=name)
+def index():
+    return template('index', menu=menu())
 
 @route('/plane.html')
-def plane(name='World'):
-    return template('plane', name=name)
+def plane():
+    return template('plane', menu=menu())
 
 @route('/list.html')
-def fly_list(name='World'):
-    return template('list', name=name)
+def fly_list():
+    return template('list', menu=menu())
 
 @route('/add_report.html')
-def fly_report(name='World'):
-    return template('add_report', name=name)
+def fly_report():
+    return template('add_report', menu=menu())
+
+@route('/calendar.html')
+def calendar():
+    return template('calendar', menu=menu())
+
+@route('/error.html')
+def error_page():
+    return template('error', menu=menu())
+
+@route('/error-feedback.html')
+def error_feedback_page():
+    return template('error_feedback', menu=menu())
 
 @route('/diary.html')
 def diary():
-    return template('diary', name="adfs")
+    return template('diary', menu=menu())
+
+@route('/report', method='POST')
+def save_report():
+    with open('DATA.txt', 'a') as f:
+        f.write('{:%Y-%m-%d %H:%M:%S} '.format(datetime.datetime.now()))
+        f.write(str(request.forms.items()))
+        f.write('\n')
 
 run(reloader=True, host='localhost', port=8008, debug=True)

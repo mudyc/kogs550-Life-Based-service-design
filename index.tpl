@@ -9,26 +9,9 @@
   <div class="root">
     <h1>KSI - Jäsensivusto</h1>
     <div class="info-box name">Pekka Pilotti</div>
-    <div class="tabs">
-    <nav>
-      <ul>
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="index.html">Omat</a></li>
-        <li><a href="index.html">Kalenterit</a></li>
-        <li><a href="index.html">Lento <img src="static/img/down.png"></a>
-            <ul>
-                <li><a href="diary.html">Matkapäiväkirja</a></li>
-            </ul>
-        </li>
-        <li><a href="index.html">Rekisterit <img src="static/img/down.png"></a></li>
-        <li><a href="index.html">Tietopankki</a></li>
-        <li><a href="index.html">Keskustelufoorumi</a></li>
-        <li><a href="index.html">Ylläpito <img src="static/img/down.png"></a></li>
-        <li><a href="index.html">Kirjaudu Ulos</a></li>
-      </ul>
-    </nav>
-    
-    </div>
+
+    {{! menu}}
+
 
 
     <div class="content info-box">

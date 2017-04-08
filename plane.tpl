@@ -7,28 +7,6 @@
 </head>
 <body>
 
-  <script>
-    var DATA = {
-    "OH-CAZ": {
-    hazard: [ "Haikara meni läpi turbiinista" ]
-    },
-    "OH-PDC": {
-    
-    },
-    "OH-U485": {
-
-    }
-    };
-  </script>
-
-
-
-
-
-
-
-
-
   
   <div class="root">
     <h1>KSI - Jäsensivusto</h1>
@@ -139,6 +117,32 @@
         <div class="col-md-6 known-issues">
           <h2>Vikatiedot:</h2>
           <div data-target="emergency">
+            <table data-target="B" class="hidden">
+              <tr>
+                <th colspan="2" class="blink">Vakavat viat
+              </tr>
+            </table>
+            <table data-target="C" class="hidden">
+              <tr>
+                <th colspan="2" class="blink">Merkittävät viat
+              </tr>
+            </table>
+            <table data-target="D" class="hidden">
+              <tr>
+                <th colspan="2">Häiritsevät viat
+              </tr>
+            </table>
+            <table data-target="E" class="hidden">
+              <tr>
+                <th colspan="2">Vähäiset viat
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-md-6 known-issues hidden">
+          <h2>Vikatiedot:</h2>
+          <div data-target="emergency">
             <h3 class="blink">Vakavat tai merkittävät viat:</h3>
             <ul>
               <li><span>Moottori ei käy kunnolla (raportoinut Lasse Lentäjä 15.3.2017)</span>
@@ -200,6 +204,8 @@
     </div>
   </div>
 
-
+  <script src="static/js/jquery-3.2.0.min.js"></script>
+  <script src="static/js/plane_data.js"></script>
+  <script src="static/js/plane.js"></script>
 </body>
 </html>

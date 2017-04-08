@@ -35,14 +35,8 @@
       <h2>Matkapäiväkirja</h2>
       <div class="info-box">
         Kone
-        <select onchange="doit();">
+        <select>
           <option>Valitse</option>
-          <option>OH-ABC</option>
-          <option>OH-123</option>
-          <option>OH-A345</option>
-          <option>OH-789</option>
-          <option>OH-KIA</option>
-          <option>OH-NO</option>
         </select>
       </div>
     </div>
@@ -50,11 +44,8 @@
   </div>
 
 
-  <script>
-    function doit() {
-    location.href = 'list.html?' + document.querySelector("select option:checked").text;
-    console.log("ASDF", this);
-    }
-  </script>
+  <script src="static/js/jquery-3.2.0.min.js"></script>
+  <script src="static/js/plane_data.js"></script>
+  <script src="static/js/diary.js"></script>
 </body>
 </html>

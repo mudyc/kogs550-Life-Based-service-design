@@ -201,12 +201,16 @@ table tr th {
     width: 50%;
 }
 .clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.known-issues td {
+    width: 50%;
 }
 
 .blink {

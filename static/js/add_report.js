@@ -6,3 +6,5 @@ $('input[type="checkbox"]').on('change', function(){
 $('input[type="radio"]').on('change', function() {
   $('.err-questions').toggleClass('hidden', $('input[type="radio"]:checked').val() != 'true');
 });
+
+

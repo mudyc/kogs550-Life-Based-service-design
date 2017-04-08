@@ -32,7 +32,7 @@
 
 
     <div class="content info-box">
-      <h2>XXXX matkapäiväkirja</h2>
+      <h2><span></span> matkapäiväkirja</h2>
       <div class="info-box">
         <a href="add_report.html"><img class="add" src="static/img/add_flight.png"></a>
         <table>
@@ -319,7 +319,8 @@
   </div>
 
 
-  <script>
-  </script>
+  <script src="static/js/jquery-3.2.0.min.js"></script>
+  <script src="static/js/plane_data.js"></script>
+  <script src="static/js/list.js"></script>
 </body>
 </html>

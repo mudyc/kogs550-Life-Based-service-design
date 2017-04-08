@@ -50,7 +50,7 @@ table {
 
 
 body {
-    background: #fff url("static/img/bg.png") no-repeat;
+    background: #fff url("../img/bg.png") no-repeat;
     padding: 0;
     padding-left: 48px;
     font-family: arial;

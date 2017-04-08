@@ -37,75 +37,75 @@
 
         <div class="form-group">
           <label>Tunnus</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="x">
+          <input type="text" class="form-control" id="exampleInputName2" name="reg" value="x">
         </div>
         <div class="form-group">
           <label>Päivä</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="27.3.2017">
+          <input type="text" class="form-control" id="exampleInputName2" name="date" value="27.3.2017">
         </div>
         <div class="form-group">
           <label>Päällikkö</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="Lasse Lentäjä">
+          <input type="text" class="form-control" id="exampleInputName2" name="pilot" value="Lasse Lentäjä">
         </div>
         <div class="form-group">
           <label>Muu miehistö</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="EI">
+          <input type="text" class="form-control" id="exampleInputName2" name="staff" value="EI">
         </div>
         <div class="form-group">
           <label>Lennon tyyppi</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="HAR">
+          <input type="text" class="form-control" id="exampleInputName2" name="fly_type" value="HAR">
         </div>
         <div class="form-group">
           <label>Lähtökenttä</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="EFJY">
+          <input type="text" class="form-control" id="exampleInputName2" name="takeoff" value="EFJY">
         </div>
         <div class="form-group">
           <label>Laskukenttä</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="EFJY">
+          <input type="text" class="form-control" id="exampleInputName2" name="landing" value="EFJY">
         </div>
         <div class="form-group">
           <label>Henkilömäärä</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="1">
+          <input type="text" class="form-control" id="exampleInputName2" name="headcount" value="1">
         </div>
         <div class="form-group">
           <label>Lasku lkm</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="1">
+          <input type="text" class="form-control" id="exampleInputName2" name="landing_count" value="1">
         </div>
         <div class="form-group">
           <label>Lähtöaika</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="12:20">
+          <input type="text" class="form-control" id="exampleInputName2" name="takeoff_t" value="12:20">
         </div>
         <div class="form-group">
           <label>Laskuaika</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="13:02">
+          <input type="text" class="form-control" id="exampleInputName2" name="landing_t" value="13:02">
         </div>
         <div class="form-group">
           <label>Off-block</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="12:04">
+          <input type="text" class="form-control" id="exampleInputName2" name="offblock_t" value="12:04">
         </div>
         <div class="form-group">
           <label>On-block</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="13:10">
+          <input type="text" class="form-control" id="exampleInputName2" name="onblock_t" value="13:10">
         </div>
         <div class="form-group">
           <label>Laskun saaja</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="Lasse Lentäjä">
+          <input type="text" class="form-control" id="exampleInputName2" name="billing" value="Lasse Lentäjä">
         </div>
         <div class="form-group">
           <label>Selite</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="">
+          <input type="text" class="form-control" id="exampleInputName2" name="description" value="">
         </div>
         <div class="form-group">
           <label>Polttoaineen lisäys</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="10">
+          <input type="text" class="form-control" id="exampleInputName2" name="fuel_add" value="10">
         </div>
         <div class="form-group">
           <label>Öljyn lisäys</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="0">
+          <input type="text" class="form-control" id="exampleInputName2" name="oil_add" value="0">
         </div>
         <div class="form-group">
           <label>Opettajakorvaus</label>
-          <input type="text" class="form-control" id="exampleInputName2" value="EI">
+          <input type="text" class="form-control" id="exampleInputName2" name="teaching_compensation" value="EI">
         </div>
 
         <div class="issues">
@@ -147,18 +147,33 @@
           </div>
           </div>
           
-          <div class="col-md-6">
+          <div class="col-md-6 known-issues">
             <h2>Vikatiedot:</h2>
-            <div data-target="nextcheck">
-              <div>Korjaus seuraavassa huollossa:</div>
-              <ul>
-                <li>
-              </ul>
+
+            <div class="hidden no-issues">
+              Ei tiedossa olevia vikoja.
             </div>
-            <div data-target="nuisance">
-              <div>Vähäiset poikkeamat:</div>
-              <ul></ul>
-            </div>
+
+            <table data-target="B" class="hidden">
+              <tr>
+                <th colspan="2" class="blink">Vakavat viat
+              </tr>
+            </table>
+            <table data-target="C" class="hidden">
+              <tr>
+                <th colspan="2" class="blink">Merkittävät viat
+              </tr>
+            </table>
+            <table data-target="D" class="hidden">
+              <tr>
+                <th colspan="2">Häiritsevät viat
+              </tr>
+            </table>
+            <table data-target="E" class="hidden">
+              <tr>
+                <th colspan="2">Vähäiset viat
+              </tr>
+            </table>
             
           </div>
           
@@ -173,6 +188,7 @@
   </div>
 
   <script src="static/js/jquery-3.2.0.min.js"></script>
+  <script src="static/js/plane_data.js"></script>
   <script src="static/js/add_report.js"></script>
 </body>
 </html>

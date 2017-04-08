@@ -34,8 +34,7 @@
     <div class="content info-box">
       <h2>Etusivu</h2>
       <div class="info-box">
-        Käytössä lentokoneet=      OH-ABC OH-123 OH-A345 OH-789 OH-KIA OH-NO
-
+        Käytössä lentokoneet=      OH-AAA OH-BBB OH-DDD OH-EEE OH-FFF OH-GGG
         <table>
           <tr>
             <th>Vuosi
@@ -52,7 +51,7 @@
           </tr>
           <tr>
             <td>2017
-            <td><a href="plane.html?OH-CAZ">OH-CAZ</a>
+            <td><a href="plane.html?OH-AAA">OH-AAA</a>
             <td>
             <td>150
             <td>2:28
@@ -65,7 +64,7 @@
           </tr>
           <tr>
             <td>2017
-            <td><a href="plane.html?OH-PDC">OH-PDC</a>
+            <td><a href="plane.html?OH-BBB">OH-BBB</a>
             <td>Vuokrakone
             <td>60
             <td>3:13
@@ -78,7 +77,7 @@
           </tr>
           <tr>
             <td>2017
-            <td><a href="plane.html?OH-U485">OH-U485</a>
+            <td><a href="plane.html?OH-DDD">OH-DDD</a>
             <td>
             <td>100
             <td>24:44

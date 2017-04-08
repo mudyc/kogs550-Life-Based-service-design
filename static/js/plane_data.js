@@ -2,8 +2,8 @@ var PLANE_DATA = {
 
   'OH-AAA': {
     flydata: {
-      date: '',
-      pilot: '',
+      date: '11.4.2017',
+      pilot: 'Pekka Pilotti',
       staff: '',
       fly_type: 'HAR',
       takeoff: 'EFJY',

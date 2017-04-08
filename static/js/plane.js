@@ -7,11 +7,14 @@ function fill_known_issues(plane) {
     return function(idx, val) {
       tbl.append('<tr><td>'+val.error+'<td>'+val.comment);
       tbl.removeClass('hidden');
+      count += 1;
     };
   };
   $.each(['B','C','D','E'], function(idx, cat){
     $.each(i[cat], fill_table(cat));
   });
+  if (count == 0) $('.known-issues .no-issues').removeClass('hidden');
 };
 
 fill_known_issues(plane);
+$('input[name="reg"]').val(plane);

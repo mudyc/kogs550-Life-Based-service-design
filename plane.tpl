@@ -46,76 +46,87 @@
           
           <div class="form-group">
             <label>Tunnus</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" name="reg" value="OH-AAA">
           </div>
           <div class="form-group">
             <label>Tyyppi</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="C-172 N">
           </div>
           <div class="form-group">
             <label>Alkuaika</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="0020:58">
           </div>
           <div class="form-group">
             <label>Alkulaskut</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="00489">
           </div>
           <div class="form-group">
             <label>Kokonaiaika (ei talleteta)</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="0037:48">
           </div>
           <div class="form-group">
             <label>Huoltoaika min</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="20">
           </div>
           <div class="form-group">
             <label>Tiedote</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="">
           </div>
           <div class="form-group">
             <label>Pankki</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="DABAFIHX">
           </div>
           <div class="form-group">
             <label>Tili</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="FI19 8000 0000 0000 00">
           </div>
           <div class="form-group">
             <label>Maksun saaja</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="K-S Ilmailijat RY">
           </div>
           <div class="form-group">
             <label>Maksun osoite</label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <input type="text" class="form-control" id="exampleInputName2" value="PL 107">
           </div>
           <div class="form-group">
-            <label></label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <label>Makun postinumero</label>
+            <input type="text" class="form-control" id="exampleInputName2" value="40101">
           </div>
           <div class="form-group">
-            <label></label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <label>Maksun kaupunki</label>
+            <input type="text" class="form-control" id="exampleInputName2" value="JYVÄSKYLÄ">
           </div>
           <div class="form-group">
-            <label></label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <label>Laskuttaja</label>
+            <input type="text" class="form-control" id="exampleInputName2" value="XXXX, p. 044-000000, laskutus">
           </div>
           <div class="form-group">
-            <label></label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <label>Huoltaja</label>
+            <input type="text" class="form-control" id="exampleInputName2" value="XXXXX.XXXX@gmail.com">
           </div>
           <div class="form-group">
-            <label></label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <label>Y-tunnus</label>
+            <input type="text" class="form-control" id="exampleInputName2" value="Y-0484564-1">
           </div>
           <div class="form-group">
-            <label></label>
-            <input type="text" class="form-control" id="exampleInputName2" value="x">
+            <label>Kulutus l/h</label>
+            <input type="text" class="form-control" id="exampleInputName2" value="32">
+          </div>
+          <div class="form-group">
+            <label>Nopeus kt</label>
+            <input type="text" class="form-control" id="exampleInputName2" value="100">
+          </div>
+          <div class="form-group">
+            <label>Max paino kg</label>
+            <input type="text" class="form-control" id="exampleInputName2" value="255">
           </div>
         </div>
 
         <div class="col-md-6 known-issues">
           <h2>Vikatiedot:</h2>
+          <div class="hidden no-issues">
+            Ei tiedossa olevia vikoja.
+          </div>
           <div data-target="emergency">
             <table data-target="B" class="hidden">
               <tr>
@@ -139,56 +150,6 @@
             </table>
           </div>
         </div>
-
-        <div class="col-md-6 known-issues hidden">
-          <h2>Vikatiedot:</h2>
-          <div data-target="emergency">
-            <h3 class="blink">Vakavat tai merkittävät viat:</h3>
-            <ul>
-              <li><span>Moottori ei käy kunnolla (raportoinut Lasse Lentäjä 15.3.2017)</span>
-            </ul>
-          </div>
-          <div data-target="nextcheck">
-            <h3>Häiritsevät viat:</h3>
-            <ul>
-              <li><span>Korkeusmittarin taustavalo pimeä</span>
-              <li>Renkaan pinta huono 14.3.2017 / Korjataan seuraavassa 50h huollossa tai kun kangasta näkyvisssä
-              <li>Laskuvaloheitin ei toimi 12.3.2017 / Korjataan hetimmiten
-            </ul>
-          </div>
-          <div data-target="nuisance">
-            <h3>Vähäinen poikkeama:</h3>
-            <ul>
-              <li>Penkki on likainen / Tiedossa
-              <li>Aurinkoläppä ei pysy yläasennossa / Korjataan talvihuollossa
-              <li>Oven lukon avain ei toimi / Tiedossa - ei korjata
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-6 known-issues hidden">
-          <h2>Vikatiedot:</h2>
-          <div data-target="emergency">
-            <h3 class="blink">Välitön turvallisuusriski:</h3>
-            <ul></ul>
-          </div>
-          <div data-target="nextcheck">
-            <h3>Korjaus seuraavassa huollossa:</h3>
-            <ul>
-              <li>Renkaan pinta huono 14.3.2017
-              <li>Laskuvaloheitin ei toimi 12.3.2017
-              <li>Korkeusmittarin taustavalo pimeä
-            </ul>
-          </div>
-          <div data-target="nuisance">
-            <h3>Vähäiset poikkeamat:</h3>
-            <ul>
-              <li>Aurinkoläppä ei pysy yläasennossa
-              <li>Oven lukon avain ei toimi
-            </ul>
-          </div>
-        </div>
-
 
         <div class="clearfix"></div>
       </div>

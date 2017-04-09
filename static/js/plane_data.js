@@ -36,7 +36,6 @@ var PLANE_DATA = {
     issues: {
       B:[],
       C:[
-        { fixed: false, error: 'Moottori ei käy kunnolla (raportoinut Lasse Lentäjä 15.3.2017', comment: '' },
       ],
       D:[
         { fixed: false,

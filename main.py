@@ -31,6 +31,10 @@ def index():
 def plane():
     return template('plane', menu=menu())
 
+@route('/planes.html')
+def planes():
+    return template('planes', menu=menu())
+
 @route('/list.html')
 def fly_list():
     return template('list', menu=menu())

@@ -16,7 +16,7 @@
     
 
     <div class="content info-box">
-      <h2>Lentokone nro. 2</h2>
+      <h2>Lentokone nro. <span></span></h2>
       <div class="info-box">
 
         <div class="col-md-6">

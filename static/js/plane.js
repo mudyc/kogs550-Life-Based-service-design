@@ -18,3 +18,10 @@ function fill_known_issues(plane) {
 
 fill_known_issues(plane);
 $('input[name="reg"]').val(plane);
+
+var i=1;
+$.each(PLANE_DATA, function(reg, obj){
+  if (plane == reg)
+    $('h2 span').text(''+i);
+  i += 1;
+});

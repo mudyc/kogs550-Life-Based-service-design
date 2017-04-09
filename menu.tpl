@@ -20,7 +20,7 @@
         </li>
         <li><a href="index.html">Rekisterit <img src="static/img/down.png"></a>
             <ul>
-                <li><a href="index.html">Lentokoneet</a></li>
+                <li><a href="planes.html">Lentokoneet</a></li>
                 <li><a href="index.html">Lentokentät</a></li>
                 <li><a href="index.html">Lentotyypit</a></li>
                 <li><a href="index.html">Jäsenrekisteri</a></li>

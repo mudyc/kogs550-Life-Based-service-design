@@ -29,8 +29,5 @@
 
   </div>
 
-  <script src="static/js/jquery-3.2.0.min.js"></script>
-  <script src="static/js/plane_data.js"></script>
-  <script src="static/js/add_report.js"></script>
 </body>
 </html>

@@ -32,7 +32,7 @@
             <th>Uusimmat asiakirjat tietopankissa
             <th>Tallennettu
           </tr>
-          <tr>
+          <tr id="OH-AAA">
             <td>2017
             <td><a href="plane.html?OH-AAA">OH-AAA</a>
             <td>
@@ -45,7 +45,7 @@
             <td>Harjoitusalueet 2016 / kansio= EF JY harjoitukset
             <td>27.02.2017
           </tr>
-          <tr>
+          <tr id="OH-BBB">
             <td>2017
             <td><a href="plane.html?OH-BBB">OH-BBB</a>
             <td>Vuokrakone
@@ -58,7 +58,7 @@
             <td>Johtokunta 1 / kansio= 2016
             <td>24.02.2017
           </tr>
-          <tr>
+          <tr id="OH-DDD">
             <td>2017
             <td><a href="plane.html?OH-DDD">OH-DDD</a>
             <td>
@@ -210,6 +210,9 @@
 
   </div>
 
+  <script src="static/js/jquery-3.2.0.min.js"></script>
+  <script src="static/js/plane_data.js"></script>
+  <script src="static/js/index.js"></script>
 
 </body>
 </html>

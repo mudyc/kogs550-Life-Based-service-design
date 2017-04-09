@@ -100,12 +100,16 @@ h1 {
 
 
 
-
+.tabs {
+    position: relative;
+    z-index: 100;
+}
 
 nav {
     background-color: #c0ffc0;
     margin: 0;
     overflow: hidden;
+    z-index:10;
 }
 nav ul{
     margin: 0;
@@ -167,6 +171,17 @@ a {
     text-decoration: none;
 }
 
+.grounding-note {
+    position:absolute;
+    left: 18%;
+    width: 40%;
+    color: white;
+    background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    text-align: center;
+}
+
 /* index page */
 
 h2 {
@@ -218,6 +233,20 @@ table tr th {
 .known-issues tr + .known-issues tr {
     border-top: 1px solid #ddd;
 }
+
+.grounding-issues {
+background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+color: white;
+text-transform: uppercase;
+font-size: 1.8;
+padding: 1em;
+text-align: center;
+}
+
+
 
 .blink {
     animation-duration: 0.5s;

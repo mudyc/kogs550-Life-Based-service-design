@@ -2,11 +2,13 @@ var plane = location.search.substring(1);
 
 function fill_known_issues(plane) {
   var i = PLANE_DATA[plane].issues, count=0;
-  function fill_table(tbl) {
-    tbl = $('table[data-target="'+tbl+'"]');
+  function fill_table(tbl_) {
+    tbl = $('table[data-target="'+tbl_+'"]');
     return function(idx, val) {
       tbl.append('<tr><td>'+val.error+'<td>'+val.comment);
       tbl.removeClass('hidden');
+      if (["B","C"].indexOf(tbl_) >= 0)
+        $('.grounding-issues').removeClass('hidden');
       count += 1;
     };
   };

@@ -104,15 +104,18 @@
           <div class="hidden no-issues">
             Ei tiedossa olevia vikoja.
           </div>
+          <div class="hidden grounding-issues">
+            Lentokiellossa
+          </div>
           <div data-target="emergency">
             <table data-target="B" class="hidden">
               <tr>
-                <th colspan="2" class="blink">Vakavat viat
+                <th colspan="2" class="">Vakavat viat
               </tr>
             </table>
             <table data-target="C" class="hidden">
               <tr>
-                <th colspan="2" class="blink">Merkittävät viat
+                <th colspan="2" class="">Merkittävät viat
               </tr>
             </table>
             <table data-target="D" class="hidden">

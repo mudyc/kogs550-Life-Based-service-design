@@ -6,3 +6,6 @@ $.each(PLANE_DATA, function(reg, obj) {
     }
   }
 });
+
+if (Cookies.get('id') === undefined)
+  Cookies.set('id', Math.floor(Math.random()*1000).toString());

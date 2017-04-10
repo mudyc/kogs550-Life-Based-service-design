@@ -212,6 +212,7 @@
 
   <script src="static/js/jquery-3.2.0.min.js"></script>
   <script src="static/js/plane_data.js"></script>
+  <script src="static/js/js.cookie.js"></script>
   <script src="static/js/index.js"></script>
 
 </body>

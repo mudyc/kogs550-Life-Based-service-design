@@ -63,7 +63,8 @@ def diary():
 def save_report():
     with open('DATA.txt', 'a') as f:
         f.write('{:%Y-%m-%d %H:%M:%S} '.format(datetime.datetime.now()))
-        client_ip = request.environ.get('REMOTE_ADDR')
+        client_ip = request.environ.get('HTTP_X_REAL_IP')
+        client_ip += request.environ.get('HTTP_X_FORWARDER_FOR')
         f.write(client_ip)
         f.write(' ')
         f.write(str(request.forms.items()))

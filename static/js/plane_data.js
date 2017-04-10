@@ -33,6 +33,16 @@ var PLANE_DATA = {
     },
   },
   'OH-BBB': {
+    flydata: {
+      takeoff: 'EFXX',
+      landing: 'EFXX',
+      date: '11.4.2017',
+      takeoff_t: '00:00',
+      landing_t: '',
+      offblock_t: '00:00',
+      onblock_t: '00:00',
+      landing_count: 1,
+    },
     issues: {
       B:[],
       C:[

@@ -25,7 +25,7 @@ var PLANE_DATA = {
       C: [
         { fixed: false,
           error: 'Kone puolsi voimakkaasti vasempaan lennon jälkeen platalle rullattaessa. Vasen rengas oli selvästi vajaa. Täytin rengasta, mutta venttiilin juuresta vuoti ilmaa jatkuvasti. (5.4.2017 Sakari Siipi)',
-          comment: 'Pyörähtänyt vanteella, rengas rikki venttiilin juuresta. Uusi rengas vaihdetaan maanantaina 12.4. (5.4.2017 Kari Kätsy)'
+          comment: 'Pyörähtänyt vanteella, rengas rikki venttiilin juuresta. Uusi rengas vaihdetaan keskiviikkona 12.4. (5.4.2017 Kari Kätsy)'
         },
       ],
       D: [  ],

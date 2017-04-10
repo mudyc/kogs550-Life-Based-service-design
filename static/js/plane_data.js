@@ -112,6 +112,13 @@ var PLANE_DATA = {
     },
   },
   'OH-GGG': {
+    flydata: {
+      date: '11.4.2017',
+      takeoff_t: '00:00',
+      landing_t: '',
+      offblock_t: '00:00',
+      onblock_t: '00:00',
+    },
     issues: {
       B:[],
       C:[ ],

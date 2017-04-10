@@ -17,7 +17,7 @@
     <div class="content info-box">
       <h2>Etusivu</h2>
       <div class="info-box">
-        Käytössä lentokoneet=      OH-AAA OH-BBB OH-DDD OH-EEE OH-FFF OH-GGG
+        Käytössä lentokoneet=      OH-AAA OH-BBB OH-DDD OH-GGG
         <table>
           <tr>
             <th>Vuosi

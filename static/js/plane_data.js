@@ -105,30 +105,6 @@ var PLANE_DATA = {
   // Kontrollikone
   // Ilma on lämmin ja tyyni. Käyt lentämässä vajaan tunnin lennon koneella OH-EEE. Lähes
   // täydellisyyttä hipova laskeutuminen kruunaa hienon lennon ajassa 15:52. Kirjaa lentosi.
-  'OH-FFF': {
-    flydata: {
-      date: '11.4.2017',
-      pilot: 'Pekka Pilotti',
-      staff: '',
-      fly_type: 'HAR',
-      takeoff: 'EFJY',
-      landing: 'EFJY',
-      headcount: 1,
-      landing_count: 1,
-      takeoff_t: '15:10',
-      landing_t: '',
-      offblock_t: '15:04',
-      onblock_t: '15:59',
-      billing: 'Pekka Pilotti',
-      description: '',
-      fuel_add: 0,
-      oil_add: 0,
-      teaching_compensation: false,
-    },
-    issues: {
-      B:[],C:[],D:[],E:[],
-    },
-  },
   'OH-GGG': {
     flydata: {
       date: '11.4.2017',

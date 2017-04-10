@@ -58,6 +58,14 @@ var PLANE_DATA = {
     },
   },
   'OH-DDD': {
+    flydata: {
+      date: '11.4.2017',
+      takeoff_t: '00:00',
+      landing_t: '',
+      offblock_t: '00:00',
+      onblock_t: '00:00',
+      landing_count: 2,
+    },
     issues: {
       B:[],C:[],D:[],E:[],
     },
